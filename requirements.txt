@@ -4,3 +4,4 @@ numpy
 matplotlib
 pillow
 opencv-python-headless==4.8.1.78
+libgl1
