@@ -42,7 +42,8 @@ def model_prediction(image):
     return fig
 
 # Streamlit App
-st.title("Wound Segmentation and Measurement")
+st.title("Smart Heel")
+st.write("Wound Segmentation and Measurement")
 st.write("Upload an image, and the app will predict the wound area, length, and width.")
 
 # File uploader
