@@ -2,14 +2,14 @@ import streamlit as st
 from ultralytics import YOLO
 from PIL import Image
 import numpy as np
-# import cv2
+import cv2
 import matplotlib.pyplot as plt
 from io import BytesIO
 
 # Function for model prediction
 def model_prediction(image):
     # Load the YOLO model
-    my_new_model = YOLO('./last.pt')  # Update the path to your model weights
+    my_new_model = YOLO('last.pt')  # Update the path to your model weights
     # Preprocessing the image
     new_image = cv2.cvtColor(np.array(image), cv2.COLOR_RGB2BGR)
     new_image = cv2.resize(new_image, (512, 512))
